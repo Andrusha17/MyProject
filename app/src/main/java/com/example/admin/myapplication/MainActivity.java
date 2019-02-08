@@ -24,5 +24,7 @@ public class MainActivity extends AppCompatActivity {
         List<Profile> profiles = DatabaseHelper.getProfiles(this);
         Profile p = profiles.get(0);
         Toast.makeText(MainActivity.this, "Profile: " + p.getFirstName() + " " + p.getLastName(), Toast.LENGTH_LONG).show();
+
+        System.out.println("Commit");
     }
 }
